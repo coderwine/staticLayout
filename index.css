@@ -1,9 +1,15 @@
 /* Quick items of Interest
 Netflix Color: 
+    Static replica: netflix.com  *main splash page*    
+
+    https://brand.netflix.com/en/
     Hex: #E50914
-    
+    Head Font: font-family: 'Karla', sans-serif;
+    Body Font: font-family: 'Archivo', sans-serif;
+
     /////Background image:
     'https://assets.nflxext.com/ffe/siteui/vlv3/f1e267d6-6c89-4764-b978-5f074b26bea5/b3971fff-4585-4604-83a5-c2d03571d56b/US-en-20190722-popsignuptwoweeks-perspective_alpha_website_medium.jpg'
+
 */
 
 /* MAIN */
@@ -14,34 +20,38 @@ body {
     background-color: black;
     color: whitesmoke;
     display: flex;
+    font-family: 'Archivo', sans-serif;
 }
 
 /* Top Banner */
 
 .top-banner {
-    background-image:url('https://assets.nflxext.com/ffe/siteui/vlv3/f1e267d6-6c89-4764-b978-5f074b26bea5/b3971fff-4585-4604-83a5-c2d03571d56b/US-en-20190722-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-image: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,.5),rgba(0,0,0,1)), url(./assets/US-en-20190722-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
     background-size: cover;
     height: 93vh;
     width: 105vw;
     background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    align-content: center;
+    display: flex;
+    flex-flow: column;
 }
 
 /* Nav Bar */
 /* stopped here.  Working on alignment. */
 .nav {
+    padding: 1.5em;
+    background-size: cover;
+    width: 105vw;
+    height: 20vh;
     display: flex;
-    flex-flow: wrap;
     justify-content: center;
-    justify-items: flex-end;
-    padding: 2em;
 }
+
 #logo {
     background-color: #E50914;
     height: 12vh;
     width: 14vw;
-
 }
 
 #sign-in {
@@ -49,7 +59,34 @@ body {
     height: 1.2em;
     width: 4em;
     padding: .3em;
-     
+    border-radius: 5px;
+    
+}
+
+#whats-next {
+    background-size: cover;
+    width: 105vw;
+}
+
+#whats-next span {
+    font-family: 'Karla', sans-serif;
+    font-size: 5.4em;
+    font-display: bold;
+}
+
+#whats-next p {
+    font-size: 2.4em;
+}
+
+#try-button {
+    background-color:#E50914;
+    height: 10vh;
+    width: 33vw;
+    border-radius: 2px;
+    align-self: center;
+    padding-top: 28px;
+    font-size: 2.5em;
+    text-transform: uppercase;
 }
 
 
