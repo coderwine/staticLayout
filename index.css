@@ -20,6 +20,7 @@ body {
     background-color: black;
     color: whitesmoke;
     display: flex;
+    flex-flow: column;
     font-family: 'Archivo', sans-serif;
 }
 
@@ -38,20 +39,21 @@ body {
 }
 
 /* Nav Bar */
-/* stopped here.  Working on alignment. */
+
 .nav {
     padding: 1.5em;
     background-size: cover;
     width: 105vw;
-    height: 20vh;
+    height: 12vh;
     display: flex;
-    justify-content: center;
+    flex-direction: row; 
 }
-
-#logo {
-    background-color: #E50914;
+/* need to fix logo & sign-in button */
+.nav #logo {
+    background-image: url(./assets/Netflix_Logo_RGB.png);
     height: 12vh;
     width: 14vw;
+    align-items: center;
 }
 
 #sign-in {
@@ -60,11 +62,13 @@ body {
     width: 4em;
     padding: .3em;
     border-radius: 5px;
-    
+    align-self: flex-end;
 }
 
+/* Top Banner Info */
+
 #whats-next {
-    background-size: cover;
+    background-size: 80vw;
     width: 105vw;
 }
 
@@ -78,17 +82,47 @@ body {
     font-size: 2.4em;
 }
 
-#try-button {
+button {
     background-color:#E50914;
+    border: none;
     height: 10vh;
     width: 33vw;
     border-radius: 2px;
     align-self: center;
-    padding-top: 28px;
+    padding: 0;
     font-size: 2.5em;
     text-transform: uppercase;
 }
+/* need to add animation to button */
+#try-button::hover {
 
+}
+
+/* Mid Banner */
+.mid-banner {
+    display: flex;
+    background-color: #111;
+    background-size: cover;
+    height: 22vh;
+    width: 105vw;
+    flex-wrap: wrap;
+}
+
+.mid-banner div {
+    height: 11vh;
+    width: 20%;
+    justify-content: center;
+/* border will be removed once images are placed. */
+    border: 1px solid black; 
+    flex-flow: row;
+}
+
+.mid-banner li {
+    height: 11vh;
+    width: 20%;
+    list-style-type: none;
+    flex-flow: row;
+    flex-wrap: wrap;
 
 
 /* Bottom Banner */
