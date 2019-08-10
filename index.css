@@ -24,36 +24,48 @@ body {
     font-family: 'Archivo', sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /* Top Banner */
 
 .top-banner {
     background-image: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,.5),rgba(0,0,0,1)), url(./assets/US-en-20190722-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
     background-size: cover;
     height: 93vh;
-    width: 105vw;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    display: flex;
     flex-flow: column;
+    z-index: 0;
 }
 
 /* Nav Bar */
 
 .nav {
     padding: 1.5em;
-    background-size: cover;
-    width: 105vw;
-    height: 12vh;
+    width: 100vw;
+    height: 8vh;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    border-bottom: 1px solid white;
+    align-content: center;
+    justify-content: center;
 }
-/* need to fix logo & sign-in button */
-.nav #logo {
+
+    
+}
+#logo {
     background-image: url(./assets/Netflix_Logo_RGB.png);
-    height: 12vh;
-    width: 14vw;
-    align-items: center;
+    background-size: 100%;
+    background-repeat: none;
+    background-position: center;
+    height: 6vh;
+    width: 9vw;
+    border: 1px solid white;
 }
 
 #sign-in {
@@ -62,7 +74,7 @@ body {
     width: 4em;
     padding: .3em;
     border-radius: 5px;
-    align-self: flex-end;
+
 }
 
 /* Top Banner Info */
@@ -82,7 +94,7 @@ body {
     font-size: 2.4em;
 }
 
-button {
+#try-button {
     background-color:#E50914;
     border: none;
     height: 10vh;
@@ -92,10 +104,11 @@ button {
     padding: 0;
     font-size: 2.5em;
     text-transform: uppercase;
+    color: white;
 }
 /* need to add animation to button */
-#try-button::hover {
-
+#try-button:hover {
+    
 }
 
 /* Mid Banner */
@@ -103,26 +116,72 @@ button {
     display: flex;
     background-color: #111;
     background-size: cover;
-    height: 22vh;
-    width: 105vw;
-    flex-wrap: wrap;
+    height: 25vh;
+    width: 100vw;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
 }
 
 .mid-banner div {
-    height: 11vh;
-    width: 20%;
-    justify-content: center;
-/* border will be removed once images are placed. */
-    border: 1px solid black; 
-    flex-flow: row;
+    height: 20vh;
+    width: 24%;
+    padding: 5px;
+    margin: 18px;
+    text-align: center;
+ 
 }
 
-.mid-banner li {
-    height: 11vh;
-    width: 20%;
-    list-style-type: none;
-    flex-flow: row;
-    flex-wrap: wrap;
+#tag {
+    font-size: 45pt;
+}
 
 
 /* Bottom Banner */
+
+.bottom-banner {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 40px;
+}
+
+.bottom-banner div{
+    height: 45vh;
+    width: 33vw;
+    margin: 5px;
+}
+
+.right {
+    padding-top: 65px;
+}
+.right span {
+    font-size: 1.9em;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.right #try-button-small {
+    background-color:#E50914;
+    border: none;
+    height: 9vh;
+    width: 14vw;
+    border-radius: 2px;
+    align-self: center;
+    padding: 0;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+#cancel-img {
+    background-image: url(./assets/asset_cancelanytime_withdevice.png);
+    background-size: 100%;
+    background-repeat: none;
+    background-position: center;
+}

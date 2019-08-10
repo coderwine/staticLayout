@@ -6,26 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo|Karla:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Netflix Recreate</title>
 </head>
 
 <body>
     <div class="top-banner">
         <!-- Nav Bar -->
+
         <div class="nav">
-       <div id="logo"></div>
-       <a href="#" target="_blank"><div id="sign-in">Sign In</div></a>
+            <svg viewBox="0 0 111 30" id="logo" focusable="true"></svg>   
+            <!-- <div id="logo"></div> -->
+        
+            <a href="#" target="_blank"><div id="sign-in">Sign In</div></a>
         </div>
         
-        <br>
-        <br>
         <!--Top Banner Info-->
+        <br>
+        <br>
+     
        <div id="whats-next">
            <span>See what's next.</span>
            <p>Watch Anywhere. Cancel Anytime.</p>
        </div>
+
        <!-- Button -->
-       <div><a href="https://www.netflix.com/signup?action=startAction&locale=en-US" target="_blank"><button id="try-button" value="Try 30 Days Free >">Try 30 Days Free ></button></div></a>
+
+       <div><a href="https://www.netflix.com/signup?action=startAction&locale=en-US" target="_blank"><button id="try-button" value="Try 30 Days Free >">Try 30 Days Free ></button></a></div>
        
     </div>
 
@@ -33,18 +40,33 @@
        <!-- <div id="door-image"></div>
         <div id="screen-image"></div>
         <div id="tag-image"><img src="./assets/price-tag.svg>"></div> -->
-        <ul>
-            <li>
-                <div id="door-image"></div>
-                <p>No commitments<br>cancel online at anytime</p></li>
-            <li>
-                <div id="screen-image"></div>
-                <p>Watch anywhere</p></li>
-            <li>
-                <div id="tag-image"><img src="./assets/price-tag.svg>"></div>
-                <p>Pick your price</p></li>
-        </ul>
+                <div><i class="material-icons" id="tag">meeting_room</i>
+                <p>No commitments<br>cancel online at anytime</p></div>
 
+                <div><i class="material-icons" id="tag">devices</i>
+                <p>Watch anywhere</p></div>
+
+                <div><i class="material-icons" id="tag">
+                        loyalty</i>
+                <p>Pick your price</p></div>
+
+    </div>
+
+    <!-- Bottom Banner -->
+
+    <div class="bottom-banner">
+        <!-- Right side -->
+        <div class="right">
+            <span>If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</span>
+                <br>
+                <br>
+            <a href="https://www.netflix.com/signup?action=startAction&locale=en-US" target="_blank"><button id="try-button-small" value="Try 30 Days Free >">Try 30 Days Free </button></a>    
+
+            
+        </div>
+
+        <!-- Left side IMG -->
+        <div id="cancel-img"></div>
     </div>
 
     </body>
